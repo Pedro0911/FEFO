@@ -11,21 +11,19 @@ let validade = document.getElementById('val');
 ////1- criar a função que captura os dados dos campos e adiciona a tabela/// 
 function add_produto(){ 
     //criação da tabela antes de estar em algum loop
-    const tabela = document.createElement('table');
-    const tblCorpo = document.createElement('tbody');
-    const linha = document.createElement('tr');
-    const celula = document.createElement('rd');
-    
-    const celulaText = document.createTextNode(rua.value);
-    celula.appendChild(celulaText)
+    var tabela = document.getElementById('tabela-main'); // conexão com a pagina que contem a tabela
+    var linha = tabela.insertRow();
 
-    linha.appendChild(celula)
-    tblCorpo.appendChild(linha)
+    var celula1 = linha.insertCell(); //rua
+    var celula2 = linha.insertCell();// codigo
+    var celula3 = linha.insertCell();//quantidade
+    var celula4 = linha.insertCell();//validade
 
-    tabela.appendChild(tblCorpo)
-    document.body.appendChild(tabela);
+    celula1.innerHTML = rua.value
+    celula2.innerHTML = codigo.value
+    celula3.innerHTML = quantidade.value
+    celula4.innerHTML = validade.value
 
-    tabela.setAttribute("border", "2");
 
 }
 
