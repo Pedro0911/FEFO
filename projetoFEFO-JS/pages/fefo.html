@@ -14,8 +14,13 @@
       }
 
       main{
-        height: 300px;
 
+        height: 300px;
+      }
+
+      #table-main{
+
+        overflow: auto;
       }
 
   </style>
@@ -55,23 +60,24 @@
 
     <hr class="container">
 
-
-    <main class="container">
-      <div class="container border" id="tabelaDV">
-        <table class="table" id="tabela-main">
-          <tr>
-            <td scope="col">RUA</td>
-            <td scope="col">Código</td>
-            <td scope="col">Quantidade</td>
-            <td scope="col">Validade</td>
-          </tr>
-
-          </table>
-
-      </div>
-  </main>
-
-      
+    <div class="container mb-3 border" id="table-main">
+      <main class="container mt-2">
+        <div class="container border" id="tabelaDV">
+          <table class="table" id="tabela-main">
+            <tr>
+              <td scope="col">RUA</td>
+              <td scope="col">Código</td>
+              <td scope="col">Quantidade</td>
+              <td scope="col">Validade</td>
+            </tr>
+            </table>
+        </div>
+      </main>
+    </div> <!--espaço onde a planilha fica armazenada-->
+    
+    <div class="container">
+      <input type="button" name="" value="baixar planilha" id="" class="">
+    </div>
       
 
 
