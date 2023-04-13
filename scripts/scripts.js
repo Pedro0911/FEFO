@@ -2,15 +2,14 @@ var rua = document.getElementById('Rua');
 let codigo = document.getElementById('Cod');
 let quantidade = document.getElementById('qtd');
 let validade = document.getElementById('val');
-
-//codigo.value, rua.value,quantidade.value,validade.value
+var alerta = document.getElementById('alerta');
+//codigo.value, rua.value,quantidade.value,validade.value, alerta.value
 //alert(codigo.value)
 
 //abaixo terei as seções da lógica fuuncional da aplicação
 
 ////1- criar a função que captura os dados dos campos e adiciona a tabela/// 
 function add_produto(){ 
-    //criação da tabela antes de estar em algum loop
     var tabela = document.getElementById('tabela-main'); // conexão com a pagina que contem a tabela
     var linha = tabela.insertRow();
 
