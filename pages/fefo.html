@@ -23,6 +23,12 @@
         overflow: auto;
       }
 
+      #botoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
   </style>
     
     <title>FEFO</title>
@@ -57,14 +63,19 @@
         <label for="exampleFormControlInput1" class="form-label">Validade</label>
         <input type="datetime" class="form-control" id="val" placeholder="Validade" required max="6">
       </div>
-      <input type="submit" value="adicionar produto" class="btn btn-primary mb-3" onclick="add_produto();"></input>
+      <div id="botoes">
+        <input type="submit" value="adicionar produto" class="btn btn-primary mb-3" id="new_produto" onclick="add_produto();"></input>
+        <input type="submit" value="novo produto" class="btn btn-warning mb-3" id="new_produto" onclick="new_produto();"></input>
+      </div>
       <p id="alerta" style="color: green;"></p>
 
     </div>
 
     <hr class="container">
 
-    <div class="container mb-3 border" id="table-main">
+
+    <!--tabela html-->
+    <div class="container mb-3 border my_tabela" id="table-main"> 
       <main class="container mt-2">
         <div class="container border" id="tabelaDV">
           <table class="table" id="tabela-main">

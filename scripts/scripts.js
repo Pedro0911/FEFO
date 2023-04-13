@@ -3,6 +3,11 @@ let codigo = document.getElementById('Cod');
 let quantidade = document.getElementById('qtd');
 let validade = document.getElementById('val');
 var alerta = document.getElementById('alerta');
+let new_produto
+
+let botão = document.getElementById('new_produto')
+
+var tabela = document.getElementsByClassName('my_tabela')[0]
 //codigo.value, rua.value,quantidade.value,validade.value, alerta.value
 //alert(codigo.value)
 
@@ -23,7 +28,22 @@ function add_produto(){
     celula3.innerHTML = quantidade.value
     celula4.innerHTML = validade.value
 
+    alerta.innerText = 'produto adicionado com sucesso !' //alerta de confirmação da ação
 
+
+    
+    //document.getElementsByClassName('my_tabela')[0].reset();
+
+    //celula1.innerHTML = rua.value = " "
+    //celula2.innerHTML = codigo.value = " "
+    //celula3.innerHTML = quantidade.value = " "
+    //celula4.innerHTML =  validade.value = " "
+
+}
+
+function new_produto(){
+    //funcionalidades do botão amarelo
+    //botão esse que dixa os valores do formulário vazio
 }
 
 
