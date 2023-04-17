@@ -10,7 +10,6 @@ let baixar = document.getElementById('baixar_planilha') //botão de baixar a pla
 
 var tabela = document.getElementsByClassName('my_tabela')[0]
 //codigo.value, rua.value,quantidade.value,validade.value, alerta.value
-//alert(codigo.value)
 
 ////1- criar a função que captura os dados dos campos e adiciona a tabela 
 function add_produto(){
@@ -39,10 +38,18 @@ function add_produto(){
         var celula3 = linha.insertCell(); //quantidade
         var celula4 = linha.insertCell(); //validade
 
+        var dia = validade.value.slice(0,2)
+        var mes = validade.value.slice(2,4)
+        var ano = validade.value.slice(4,)
+
+
         celula1.innerHTML = rua.value
         celula2.innerHTML = codigo.value
         celula3.innerHTML = quantidade.value
-        celula4.innerHTML = validade.value
+        celula4.innerHTML = `${dia}/${mes}/${ano}`
+
+        
+        //celula4.innerHTML = validade.value
         
         alerta.innerText = 'produto adicionado com sucesso !' //alerta de confirmação da ação
         alerta.style.color='4ee44e'
@@ -66,7 +73,6 @@ function reset_form(){
     alerta.innerText = ' ' 
 
 }
-
 
 // não altere a função de forma alguma. Ela é responsável por baixar a tabela corretamente !!!
 function donwload(type, fn, dl) {
