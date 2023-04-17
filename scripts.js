@@ -43,7 +43,7 @@ function add_produto(){
         var ano = validade.value.slice(4,)
 
 
-        celula1.innerHTML = rua.value
+        celula1.innerHTML = rua.value.toUpperCase()
         celula2.innerHTML = codigo.value
         celula3.innerHTML = quantidade.value
         celula4.innerHTML = `${dia}/${mes}/${ano}`
@@ -65,10 +65,10 @@ function add_produto(){
 
 function reset_form(){
 
-    document.getElementById('Rua').value= " "
-    document.getElementById('Cod').value= " "
-    document.getElementById('qtd').value= " "
-    document.getElementById('val').value= " "
+    document.getElementById('Rua').value= ""
+    document.getElementById('Cod').value= ""
+    document.getElementById('qtd').value= ""
+    document.getElementById('val').value= ""
 
     alerta.innerText = ' ' 
 
