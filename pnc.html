@@ -39,7 +39,7 @@
 <body>
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light container pb-3 pt-3">
-    <a class="navbar-brand" href="#">Página inicial</a>
+    <a class="navbar-brand" href="/index.html">Página inicial</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,14 +49,14 @@
 
        <div class="mb-2">
         <label for="exampleFormControlInput1" class="form-label">Motivo</label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="motivo">
           
           <option selected>Clique e selecione o motivo do Bloqueio</option>
-          <option value="1">Microfuro</option>
-          <option value="2">Fefo</option>
-          <option value="3">Faltando</option>
-          <option value="3">Quebrado</option>
-          <option value="3">Mal cheiro</option>
+          <option value="Microfuro">Microfuro</option>
+          <option value="Fefo">Fefo</option>
+          <option value="Faltando">Faltando</option>
+          <option value="Quebrado">Quebrado</option>
+          <option value="Mal cheiro">Mal cheiro</option>
         </select>
       
       </div>
@@ -78,12 +78,12 @@
 
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Data do bloqueio</label>
-        <input type="datetime" class="form-control" id="val" required maxlength="6">
+        <input type="datetime" class="form-control" id="data_block" required maxlength="6">
       </div>
 
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Data da tratativa</label>
-        <input type="datetime" class="form-control" id="val" required maxlength="6">
+        <input type="datetime" class="form-control" id="tratativa" required maxlength="6">
       </div>
 
       <div id="botoes">
@@ -98,7 +98,7 @@
 
 
     <!--tabela html-->
-    <div class="container mb-3 border my_tabela" id="table-main"> 
+    <div class="container mb-3 border my_tabela" id="my_tabela"> 
       <main class="container mt-2">
         <div class="container border" id="tabelaDV">
           <table class="table" id="tabela-pnc">
